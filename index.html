@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 50%;
+            display: block;
+            margin: 10px auto;
+            background: silver;
+            padding: 20px;
+        }
+        #myp1, #myp2{
+            background-color: white;
+            font-size: 20px;
+            padding: 20px;
+            border: 1px solid;
+        }
+        #mydiv1, #mydiv2{
+            padding: 50px;
+            background-color: orange;
+            margin: 5px auto;
+        }
+        button{
+            padding: 10px;
+            background-color: rgba(129, 62, 201, 0.884);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="date">
+        <h2>Show Date</h2>
+        <h1 id="date"></h1>
+        <button onclick="displayDate()">Show Date</button>
+    </div>
+    <div class="ucase">
+        <h3>oninput event. all input value are uppercase</h3>
+        <input id="case1" type="text" oninput="uppercaseFunc1()">
+    </div>
+    <div >
+        <h3>onchange event. all input value are uppercase</h3>
+        <input id="case2" type="text" onchange="uppercaseFunc2()">
+    </div>
+    <div 
+    style="width: 100px; height: 100px; background-color: blue; color: wheat;" 
+    onmouseover="mouseoverFunc(this)" 
+    onmousedown="mousedownFunc(this)" 
+    onmouseleave="onmouseleaveFunc(this)"  >
+        <p>mouse</p>
+    </div>
+
+    <div>
+        <h1 id="clock"></h1>
+        <button id="mybtn">Show Clock</button>
+        <button id="mybtn1">Stop Clock</button>
+    </div>
+
+    <div id="mydiv1">
+        <h1>Bubbling</h1>
+        <p id="myp1">Click Me</p>
+
+    </div>
+    <div id="mydiv2">
+        <h1>Capturing</h1>
+        <p id="myp2">Click me</p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
